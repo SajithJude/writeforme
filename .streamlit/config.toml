@@ -1,3 +1,7 @@
 [theme]
 
 secondaryBackgroundColor = "rgba(0, 0, 0, 0.1)"
+
+
+[ui]
+hideTopBar = true
