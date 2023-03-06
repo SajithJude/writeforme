@@ -4,9 +4,8 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as html
 
-custom_theme = {
-    "secondaryBackgroundColor": "rgba(0, 0, 0, 0)",
-}
+st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
+
 
 with st.container():
         card=option_menu("Trial Pack",['hshhss'],
@@ -18,7 +17,6 @@ with st.container():
     )
 
 # Apply the custom theme
-st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
 
 
 with st.sidebar:
