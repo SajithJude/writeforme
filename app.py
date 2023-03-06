@@ -21,7 +21,7 @@ with st.sidebar:
                          icons=['house', 'camera fill', 'kanban', 'book','person lines fill'],
                          menu_icon="app-indicator", default_index=0,
                          styles={
-        "container": {"padding": "5!important","margin": "1!important" ,"background-color": "rgba(0, 0, 0, 0.1)"},
+        "container": {"padding": "5!important","margin": "1!important" ,"background-color": "rgba(0, 0, 0, 0)"},
         "icon": {"font-color":"Grey", "font-size": "25px", "border-radius":"50%"}, 
         "nav-link": {"font-size": "16px","font-weight":"700", "border-radius":"10px", "font-color":"Grey", "text-align": "left", "margin":"10px", "--hover-color": "#FF69B4"},
         "nav-link-selected": {"background": " linear-gradient(to right, #9B59B6, #E91E63);"},
