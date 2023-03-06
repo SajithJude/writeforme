@@ -1,13 +1,12 @@
 import streamlit as st
 import base64
 
-# Define a function to be called when the button is clicked
-def button_click():
-    st.write('Button clicked!')
+# Create a text input field and get its value
+name = st.text_input('Enter your name:')
+message = f'Hello, {name}!'
 
-# Create a button and inject it inside a div tag
-st.markdown('<div><button onclick="button_click()">Click me</button></div>', unsafe_allow_html=True)
-
+# Inject the message inside a div tag
+st.markdown(f'<div style="background-color: #f0f0f0; padding: 20px;">{message}</div>', unsafe_allow_html=True)
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
@@ -47,10 +46,10 @@ def add_bg_from_local(image_file):
     </style>
     """, unsafe_allow_html=True)
 
-    st.markdown("""
+    st.markdown(f"""
     <div class="glass-card" style="width:100%">
-       <div class="column"></div>
-       <div class="column"></div>
+       <div class="column">{message}</div>
+       <div class="column">{message}</div>
     </div>
     """, unsafe_allow_html=True)
 add_bg_from_local('image.jpg')    
