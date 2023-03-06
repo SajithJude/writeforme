@@ -12,7 +12,7 @@ st.set_page_config(page_title="My App", page_icon=":rocket:", layout="centered",
 #         </style>
 #         """
 # st.markdown(hide_menu_style, unsafe_allow_html=True)
-with st.container():
+with st.sidebar:
     navbar = option_menu("Output", [""],
                             menu_icon="menu-button", default_index=0, orientation='horizontal',
                             styles={
