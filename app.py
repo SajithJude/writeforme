@@ -22,18 +22,19 @@ with left_column:
     .card {
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
       background-color: #fff;
     }
     </style>
     """,
     unsafe_allow_html=True,)
-
+    
 
 # Create container element with custom CSS style
     container = st.container()
+    container.markdown(f'<div class="card"><div>{inpt}</div><div>{btn}</div></div>', unsafe_allow_html=True)
     inpt =  container.text_input("This is a curved card!")
     btn = container.button("Click me")
-    container.markdown(f'<div class="card"><div>{inpt}</div><div>{btn}</div></div>', unsafe_allow_html=True)
 
     # Add content to the container
    
