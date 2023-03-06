@@ -6,7 +6,7 @@ name = st.text_input('Enter your name:')
 # message = f'Hello, {name}!'
 
 # Inject the message inside a div tag
-st.markdown(f'<div style="background-color: #f0f0f0; padding: 20px;">{message}</div>', unsafe_allow_html=True)
+# st.markdown(f'<div style="background-color: #f0f0f0; padding: 20px;">{message}</div>', unsafe_allow_html=True)
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
