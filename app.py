@@ -20,10 +20,10 @@ def add_bg_from_local(image_file):
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        color: rgba(255, 255, 255, 0.1);
-        box-shadow:  0 8px 16px rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
-        padding: 10%;
+        padding: 20px;
     }}
 
     .card  {{
@@ -47,7 +47,7 @@ def add_bg_from_local(image_file):
 
     
     
-    name = st.text_input('')
+    # name = st.text_input('')
 
     st.markdown(f"""
     <div class="card">
