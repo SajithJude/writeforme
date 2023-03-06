@@ -31,12 +31,10 @@ def add_bg_from_local(image_file):
     """, unsafe_allow_html=True)
 
     st.markdown("""
-    <div class="glass-card">
-        <h1>Transparent Glassmorphic Streamlit Card</h1>
+    <div class="glass-card" style="width:100%">
         <p>This is an example of a transparent Glassmorphic Streamlit card.</p>
     </div>
     """, unsafe_allow_html=True)
 add_bg_from_local('image.jpg')    
 
 
-    
