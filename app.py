@@ -1,30 +1,21 @@
 import streamlit as st
+import base64
 
 
-st.markdown(
-    """
+
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    st.markdown(
+    f"""
     <style>
-    body {
-        background-image: linear-gradient(to bottom right, #00ffff, #ff00ff);
-    }
+    .stApp {{
+        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-size: cover
+    }}
     </style>
     """,
     unsafe_allow_html=True
-)
-st.write("Hello world")
-
-
-# Define the CSS style
-slider_style = """
-<style>
-    .css-1tj0q0g-ValueContainer {
-        font-size: 24px !important;
-        color: #000000 !important;
-    }
-</style>
-"""
-
-# Render the slider component
-st.markdown(slider_style, unsafe_allow_html=True)
-slider_val = st.slider("Select a value", 0, 10, 5)
-# Add your Streamlit app code here
+    )
+add_bg_from_local('blue_bg.png')    
+    
