@@ -9,7 +9,7 @@ custom_theme = {
 }
 
 with st.container():
-        card=option_menu("Trial Pack",
+        card=option_menu("Trial Pack",['hshhss'],
                          icons=['user'],
                          menu_icon="app-indicator", default_index=0,
                         styles={
