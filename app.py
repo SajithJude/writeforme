@@ -21,7 +21,7 @@ def add_bg_from_local(image_file):
         justify-content: space-between;
         width: 100%;
         color: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.2);
+        box-shadow:  0 8px 16px rgba(0, 0, 0, 0.3);
         border-radius: 20px;
         padding: 10%;
     }}
