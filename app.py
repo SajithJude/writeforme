@@ -16,8 +16,8 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-if "x" not in st.session_state:
-    st.session_state['x'] = x
+# if "x" not in st.session_state:
+#     st.session_state['x'] = x
 
 with st.sidebar:
     choose = option_menu("App Gallery", ["Write For Me", "Idea Generator", "Promotion Ideas", "Account", "Log Out"],
