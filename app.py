@@ -13,7 +13,7 @@ with st.sidebar:
         "container": {"padding": "5!important", "background-color": "#fafafa"},
         "icon": {"color": "orange", "font-size": "25px"}, 
         "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-color": " linear-gradient(to right, #4B0082, #FF69B4);"},
+        "nav-link-selected": {"background": " linear-gradient(to right, #4B0082, #FF69B4);"},
     }
     )
 
