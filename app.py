@@ -47,7 +47,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-# add_bg_from_local('image.jpg')    
+add_bg_from_local('image.jpg')    
     
 st.markdown(""" <style> 
     .form {
@@ -60,6 +60,18 @@ st.markdown(""" <style>
 if choose == "Write For Me":
     # st.stop()
     with st.form(key="form"):
+        st.markdown(
+            f"""
+            <div style='
+                height: 100%;
+                background-image: url("data:image/png;base64,{encoded_string.decode()}"); 
+                background-size: cover;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            '></div>
+            """,
+            unsafe_allow_html=True
+        )
         des=st.text_input(label='Description') 
         para=st.text_input(label='Parameter') 
         submitted = st.form_submit_button('Submit')
