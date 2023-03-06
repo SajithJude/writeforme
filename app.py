@@ -70,9 +70,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
      } 
     </style> """, unsafe_allow_html=True)
 
+col1, col2,= st.columns(2)
 
-with st.container():
-
+with col1:
     if choose == "Write For Me":
     # st.stop()
         with st.form(key="form"):
@@ -104,6 +104,8 @@ with st.container():
                 st.write('Submitted!')
                 st.stop()
 
+with col2:
+    st.code("Out put")
 
 # if choose == "Write For Me":
 #     # st.stop()
