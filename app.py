@@ -12,7 +12,7 @@ with st.sidebar:
                          styles={
         "container": {"padding": "5!important", "background-color": "#fafafa"},
         "icon": {"color": "white", "font-size": "25px", "background-color":"dark-blue","padding": "5!important"}, 
-        "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "box-shadow(0px 0px 20px 5px #FF69B4;)"},
+        "nav-link": {"font-size": "16px", "font-color":"Grey", "text-align": "left", "margin":"0px", "--hover-color": "#FF69B4"},
         "nav-link-selected": {"background": " linear-gradient(to right, #9B59B6, #E91E63);"},
     }
     )
