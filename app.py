@@ -92,7 +92,6 @@ col1, col2,= st.columns(2)
 
 with col1:
     if choose == "Write For Me":
-    # st.stop()
         with st.form(key="form"):
             st.subheader('Write for me')
             des=st.text_input(label='Description') 
@@ -100,7 +99,9 @@ with col1:
             submitted = st.form_submit_button('Submit')
             if submitted:
                 x = openai(des)
-                st.stop()
+                # if "x" not in st.session_state:
+                st.session_state['x'] = x
+    
 
     elif choose == "Idea Generator":
         with st.form(key="form2"):
@@ -110,7 +111,9 @@ with col1:
             submitted = st.form_submit_button('Submit')
             if submitted:
                 x = openai(des2)
-                st.stop()
+                st.session_state['x'] = x
+
+
 
     elif choose == "Promotion Ideas":
         with st.form(key="form2"):
@@ -120,9 +123,11 @@ with col1:
             submitted = st.form_submit_button('Submit')
             if submitted:
                 x = openai(des2)
-                st.stop()
+                st.session_state['x'] = x
+
+
 
 with col2:
-    if x is not None:
-
-        st.code(x)
+    with st.container():
+        # if x is not None:
+        st.code(st.session_state['x'])
