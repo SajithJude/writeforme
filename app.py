@@ -14,13 +14,7 @@ left_column, right_column = st.columns((1,3))
 # Add elements to the left column
 with left_column:
     with st.container():
-        leftcard=option_menu("Trial Pack",['snsn'],
-                            icons=['user'],
-                            menu_icon="app-indicator", default_index=0,
-                            styles={
-            "container": {"padding": "5!important","margin": "1!important" ,"background-color": "#fafafa", "box-shadow": "0px 0px 20px 5px"},
-        }
-        )
+        st.write("options")
 
 # Add elements to the right column
 with right_column:
@@ -34,15 +28,6 @@ with right_column:
         )
 
 
-with st.container():
-
-    card=option_menu("Trial Pack",['hshhss'],
-                         icons=['user'],
-                         menu_icon="app-indicator", default_index=0,
-                        styles={
-        "container": {"padding": "5!important","margin": "1!important" ,"background-color": "#fafafa", "box-shadow": "0px 0px 20px 5px"},
-    }
-    )
 
 # Apply the custom theme
 
