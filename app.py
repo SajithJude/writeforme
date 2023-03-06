@@ -3,6 +3,8 @@ import base64
 import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as html
+from streamlit_card import card
+
 
 st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
 
@@ -14,7 +16,12 @@ left_column, right_column = st.columns((1,3))
 # Add elements to the left column
 with left_column:
     with st.container():
-        st.write("options")
+        hasClicked = card(
+  title="Hello World!",
+  text="Some description",
+  image="http://placekitten.com/200/300"
+  url="https://github.com/gamcoh/st-card"
+)
 
 # Add elements to the right column
 with right_column:
