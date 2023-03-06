@@ -14,7 +14,7 @@ left_column, right_column = st.columns((1,3))
 # Add elements to the left column
 with left_column:
     with st.container():
-        leftcard=option_menu("Trial Pack",
+        leftcard=option_menu("Trial Pack",['snsn'],
                             icons=['user'],
                             menu_icon="app-indicator", default_index=0,
                             styles={
@@ -25,7 +25,7 @@ with left_column:
 # Add elements to the right column
 with right_column:
     with st.container():
-        rightcard=option_menu("Trial Pack",
+        rightcard=option_menu("Trial Pack",['h'],
                             icons=['user'],
                             menu_icon="app-indicator", default_index=0,
                             styles={
