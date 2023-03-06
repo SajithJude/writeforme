@@ -31,7 +31,7 @@ with st.sidebar:
     with st.container():
         box=option_menu("Trial Pack", ["Click to subscribe"],
                          icons=['user'],
-                         menu_icon="app-indicator", default_index=0,
+                         menu_icon="time", default_index=0,
                         styles={
         "container": {"padding": "5!important","background": "rgba(255, 255, 255, 0.2)","border-radius": "16px","box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1)","backdrop-filter": "blur(5px)","-webkit-backdrop-filter": "blur(5px)","border": "1px solid rgba(255, 255, 255, 0.3)"},
     }
