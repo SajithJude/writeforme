@@ -13,7 +13,7 @@ st.set_page_config(page_title="My App", page_icon=":rocket:", layout="centered",
 #         """
 # st.markdown(hide_menu_style, unsafe_allow_html=True)
 
-navbar = option_menu("App Gallery", ["Write For Me", "Idea Generator", "Promotion Ideas", "Account", "Log Out"],
+navbar = option_menu("Output", ["Write For Me", "Idea Generator", "Promotion Ideas", "Account", "Log Out"],
                          icons=['cpu', 'lightbulb fill', 'bar-chart fill', 'book','person dash'],
                          menu_icon="app-indicator", default_index=0, orientation='horizontal',
                          styles={
