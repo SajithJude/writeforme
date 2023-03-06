@@ -21,6 +21,9 @@ with st.sidebar:
         box=option_menu("App Gallery", ["Trial Pack"],
                          icons=['user'],
                          menu_icon="app-indicator", default_index=0,
+                        styles={
+        "container":{"background": " linear-gradient(to right, #9B59B6, #E91E63);"},
+    }
     )
 
 
