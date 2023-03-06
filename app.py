@@ -10,21 +10,20 @@ import base64
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
-        st.markdown(
+    st.markdown(
     f"""
     <style>
     .stApp {{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
-    }}
-
-    .card  {{
-            display: flex;
-            height: 300px;
-            width: 500px;
-             border-radius: 20px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            
-        
+        background-size: cover
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.1);
+        box-shadow:  0 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 10%;
     }}
     </style>
     """,
@@ -32,11 +31,18 @@ def add_bg_from_local(image_file):
     )
 
     
-    
-    # name = st.text_input('')
+    st.markdown("""
+    <style>
+        .glass-card {
+            
+          
+        }
+    </style>
+    """, unsafe_allow_html=True)
+    name = st.text_input('')
 
     st.markdown(f"""
-    <div class="card">
+    <div class="glass-card" style="width:100%">
       
     </div>
     """, unsafe_allow_html=True)
