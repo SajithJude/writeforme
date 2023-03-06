@@ -66,7 +66,7 @@ if choose == "Write For Me":
                 height: 100%;
                 background-size: cover;
                 border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 10px rgba(1, 1, 1,1);
             '></div>
             """,
             unsafe_allow_html=True
