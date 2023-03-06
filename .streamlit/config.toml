@@ -4,4 +4,4 @@ secondaryBackgroundColor = "rgba(0, 0, 0, 0.001)"
 
 
 [ui]
-hideTopBar = true
+hideTopBar = false
