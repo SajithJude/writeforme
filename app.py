@@ -16,7 +16,7 @@ st.set_page_config(page_title="My App", page_icon=":rocket:", layout="centered",
 navbar = option_menu("Output", [""],
                          menu_icon="menu-button", default_index=0, orientation='horizontal',
                          styles={
-        "container": {"background": "rgba(0, 0, 0, 0.2)","border-radius": "16px","box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1);","backdrop-filter": "blur(5px)","border": "1px solid rgba(255, 255, 255, 0.3);"},
+        "container": {"background": "rgba(255, 255, 255, 0.2)","border-radius": "16px","box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1);","backdrop-filter": "blur(5px)","border": "1px solid rgba(255, 255, 255, 0.3);"},
     }
     )
 
