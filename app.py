@@ -20,8 +20,6 @@ navbar = option_menu("Output", [""],
     }
     )
 
-if navar:
-
 
 
 
