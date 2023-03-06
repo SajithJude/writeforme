@@ -92,7 +92,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 # with col1:
 if choose == "Write For Me":
 
-    navbar = option_menu("Write For me", [""],
+    navbar = option_menu("Write For me", [st.text_input("Enter somethin here")],
                         #  icons=['cpu', 'lightbulb fill', 'bar-chart fill', 'book','person dash'],
                          menu_icon="lightbulb-fill", default_index=0, orientation='horizontal',
                          styles={
