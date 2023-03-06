@@ -88,10 +88,11 @@ elif choose == "Idea Generator":
             st.stop()
 
 elif choose == "Promotion Ideas":
-    prom=option_menu("Promotion Ideas", ["Click to subscribe"],
-                         menu_icon="kanban", default_index=0,
-                        styles={
-        "container": {"padding": "5!important","background": "rgba(255, 255, 255, 0.2)","border-radius": "16px","box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1)","backdrop-filter": "blur(5px)","-webkit-backdrop-filter": "blur(5px)","border": "1px solid rgba(255, 255, 255, 0.3)"},
-        "icon": {"font-color":"Grey", "font-size": "25px", "border-radius":"50%"}, 
+    with st.container():
+        prom=option_menu("Promotion Ideas", ["Click to subscribe"],
+                            menu_icon="kanban", default_index=0,
+                            styles={
+            "container": {"padding": "5!important","background": "rgba(255, 255, 255, 0.2)","border-radius": "16px","box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1)","backdrop-filter": "blur(5px)","-webkit-backdrop-filter": "blur(5px)","border": "1px solid rgba(255, 255, 255, 0.3)"},
+            "icon": {"font-color":"Grey", "font-size": "25px", "border-radius":"50%"}, 
 
-   } )
+    } )
