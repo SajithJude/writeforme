@@ -49,19 +49,19 @@ def add_bg_from_local(image_file):
     )
 add_bg_from_local('image.jpg')    
     
-
-if choose == "Write For Me":
-    st.markdown(""" <style> 
+st.markdown(""" <style> 
     .form {
      color:#E4E4E4; 
      border-radius:10px;
      } 
     </style> """, unsafe_allow_html=True)
+    
+if choose == "Write For Me":
     # st.stop()
-with st.form(key="form"):
-    des=st.text_input(label='Description') 
-    para=st.text_input(label='Parameter') 
-    submitted = st.form_submit_button('Submit')
-    if submitted:
-        st.write('Submitted!')
-        st.stop()
+    with st.form(key="form"):
+        des=st.text_input(label='Description') 
+        para=st.text_input(label='Parameter') 
+        submitted = st.form_submit_button('Submit')
+        if submitted:
+            st.write('Submitted!')
+            st.stop()
