@@ -64,7 +64,6 @@ if choose == "Write For Me":
             f"""
             <div style='
                 height: 100%;
-                # background-image: url("data:image/png;base64,{encoded_string.decode()}"); 
                 background-size: cover;
                 border-radius: 10px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
