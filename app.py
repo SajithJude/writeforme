@@ -52,7 +52,7 @@ add_bg_from_local('image.jpg')
 
 if choose == "Write For Me":
     st.markdown(""" <style> .columns_in_form2 {
-    font-size:16px ; color:"#fafafa" ;} 
+    font-size:16px ; color:"#fafafa"; border-radius:10px;} 
     </style> """, unsafe_allow_html=True)
     # st.markdown('<p class="font">Write For Me</p>', unsafe_allow_html=True)
     with st.form(key='columns_in_form2',clear_on_submit=True): #set clear_on_submit=True so that the form will be reset/cleared once it's submitted
