@@ -4,7 +4,12 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as html
 from streamlit_card import card
-
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide",initial_sidebar_state="expanded"  )
 
