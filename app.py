@@ -51,7 +51,6 @@ add_bg_from_local('image.jpg')
     
 st.markdown(""" <style> 
     .form {
-     color:#E4E4E4; 
      border-radius:10px;
      border-width:2px;
      } 
