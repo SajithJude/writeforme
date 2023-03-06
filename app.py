@@ -40,14 +40,14 @@ with st.sidebar:
 
     if choose == "Write For Me":
     # st.stop()
-    with st.form(key="form"):
-        st.subheader('Write for me')
-        des=st.text_input(label='Description') 
-        para=st.text_input(label='Parameter') 
-        submitted = st.form_submit_button('Submit')
-        if submitted:
-            st.write('Submitted!')
-            st.stop()
+        with st.form(key="form"):
+            st.subheader('Write for me')
+            des=st.text_input(label='Description') 
+            para=st.text_input(label='Parameter') 
+            submitted = st.form_submit_button('Submit')
+            if submitted:
+                st.write('Submitted!')
+                st.stop()
 
     elif choose == "Idea Generator":
         with st.form(key="form2"):
