@@ -16,8 +16,8 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-# if "x" not in st.session_state:
-#     st.session_state['x'] = x
+if "x_result" not in st.session_state:
+    st.session_state['x_result'] = x
 
 with st.sidebar:
     choose = option_menu("App Gallery", ["Write For Me", "Idea Generator", "Promotion Ideas", "Account", "Log Out"],
@@ -100,8 +100,8 @@ with col1:
             submitted = st.form_submit_button('Submit')
             if submitted:
                 x = openai(des)
-                if "x" not in st.session_state:
-                    st.session_state['x'] = x
+                # if "x" not in st.session_state:
+                st.session_state['x'] = x
     
 
     elif choose == "Idea Generator":
@@ -112,8 +112,8 @@ with col1:
             submitted = st.form_submit_button('Submit')
             if submitted:
                 x = openai(des2)
-                if "x" not in st.session_state:
-                    st.session_state['x'] = x
+                # if "x" not in st.session_state:
+                st.session_state['x_result'] = x
 
 
 
@@ -125,8 +125,8 @@ with col1:
             submitted = st.form_submit_button('Submit')
             if submitted:
                 x = openai(des2)
-                if "x" not in st.session_state:
-                    st.session_state['x'] = x
+                # if "x" not in st.session_state:
+                st.session_state['x_result'] = x
 
 
 
