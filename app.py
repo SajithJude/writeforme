@@ -1,6 +1,12 @@
 import streamlit as st
 import base64
 
+# Define a function to be called when the button is clicked
+def button_click():
+    st.write('Button clicked!')
+
+# Create a button and inject it inside a div tag
+st.markdown('<div><button onclick="button_click()">Click me</button></div>', unsafe_allow_html=True)
 
 
 def add_bg_from_local(image_file):
