@@ -13,7 +13,7 @@ def add_bg_from_local(image_file):
     st.markdown(
     f"""
     <style>
-    .stApp {{
+    .card  {{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
         display: flex;
             justify-content: center;
@@ -32,11 +32,8 @@ def add_bg_from_local(image_file):
 
     
 
-    st.markdown(f"""
-    <div class="glass-card" style="width:100%">
-      SSS
-    </div>
-    """, unsafe_allow_html=True)
+
 add_bg_from_local('image.jpg')    
 
-
+with st.beta_container():
+    st.markdown('<div class="card">Hello, world!</div>', unsafe_allow_html=True)
