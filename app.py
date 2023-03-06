@@ -23,26 +23,24 @@ left_column, right_column , last_column= st.columns((1,3))
 # Add elements to the left column
 with left_column:
     with st.container():
-
-    leftcard=option_menu("Trial Pack",
-                         icons=['user'],
-                         menu_icon="app-indicator", default_index=0,
-                        styles={
-        "container": {"padding": "5!important","margin": "1!important" ,"background-color": "#fafafa", "box-shadow": "0px 0px 20px 5px"},
-    }
-    )
+        leftcard=option_menu("Trial Pack",
+                            icons=['user'],
+                            menu_icon="app-indicator", default_index=0,
+                            styles={
+            "container": {"padding": "5!important","margin": "1!important" ,"background-color": "#fafafa", "box-shadow": "0px 0px 20px 5px"},
+        }
+        )
 
 # Add elements to the right column
 with right_column:
     with st.container():
-
-    rightcard=option_menu("Trial Pack",
-                         icons=['user'],
-                         menu_icon="app-indicator", default_index=0,
-                        styles={
-        "container": {"padding": "5!important","margin": "1!important" ,"background-color": "#fafafa", "box-shadow": "0px 0px 20px 5px"},
-    }
-    )
+        rightcard=option_menu("Trial Pack",
+                            icons=['user'],
+                            menu_icon="app-indicator", default_index=0,
+                            styles={
+            "container": {"padding": "5!important","margin": "1!important" ,"background-color": "#fafafa", "box-shadow": "0px 0px 20px 5px"},
+        }
+        )
 
 
 with st.container():
