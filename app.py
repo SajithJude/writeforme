@@ -54,7 +54,7 @@ if choose == "Write For Me":
     x=st.markdown(""" <style> .columns_in_form2 {
     font-size:16px ; color:#E4E4E4; border-radius:10px;} 
     </style> """, unsafe_allow_html=True)
-    with st.form(x), unsafe_allow_html=True):
+    with st.form(x):
 
     # with st.form(key='columns_in_form2',clear_on_submit=True): #set clear_on_submit=True so that the form will be reset/cleared once it's submitted
         #st.write('Please help us improve!')
