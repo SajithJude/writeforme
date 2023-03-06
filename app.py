@@ -6,12 +6,12 @@ import streamlit.components.v1 as html
 from streamlit_card import card
 st.set_page_config(page_title="My App", page_icon=":rocket:", layout="centered",initial_sidebar_state="expanded"  )
 
-hide_menu_style = """
-        <style>
-        #MainMenu {visibility: hidden;}
-        </style>
-        """
-st.markdown(hide_menu_style, unsafe_allow_html=True)
+# hide_menu_style = """
+#         <style>
+#         #MainMenu {visibility: hidden;}
+#         </style>
+#         """
+# st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 navbar = option_menu("App Gallery", ["Write For Me", "Idea Generator", "Promotion Ideas", "Account", "Log Out"],
                          icons=['cpu', 'lightbulb fill', 'bar-chart fill', 'book','person dash'],
