@@ -51,3 +51,12 @@ def add_bg_from_local(image_file):
     )
 add_bg_from_local('image.jpg')    
     
+
+with st.container():
+        box=option_menu("Trial Pack", ["Click to subscribe"],
+                         icons=['user'],
+                         menu_icon="app-indicator", default_index=0,
+                        styles={
+        "container":{"background":"linear-gradient(to right, #9B59B6, #E91E63);","font-color":"white"},
+    }
+    )
