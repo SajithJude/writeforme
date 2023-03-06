@@ -16,6 +16,14 @@ def add_bg_from_local(image_file):
     .stApp {{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
         background-size: cover
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        padding: 10%;
     }}
     </style>
     """,
@@ -26,22 +34,8 @@ def add_bg_from_local(image_file):
     st.markdown("""
     <style>
         .glass-card {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.2);
-            border-radius: 20px;
-            padding: 10%;
+            
           
-        }
-
-         .column card {
-            flex-basis: 35%;
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 5%;
-            filter: blur(10px);
         }
     </style>
     """, unsafe_allow_html=True)
@@ -49,8 +43,7 @@ def add_bg_from_local(image_file):
 
     st.markdown(f"""
     <div class="glass-card" style="width:100%">
-       <div class="column">{name}</div>
-       <div class="column">{name}</div>
+      
     </div>
     """, unsafe_allow_html=True)
 add_bg_from_local('image.jpg')    
