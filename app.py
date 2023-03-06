@@ -53,7 +53,7 @@ add_bg_from_local('image.jpg')
     
 
 with st.container():
-        box=option_menu("Trial Pack", ["Click to subscribe"],
+        card=option_menu("Trial Pack", ["Click to subscribe"],
                          icons=['user'],
                          menu_icon="app-indicator", default_index=0,
                         styles={
