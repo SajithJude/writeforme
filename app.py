@@ -15,11 +15,28 @@ left_column, right_column = st.columns((1,3))
 
 # Add elements to the left column
 with left_column:
-
-    hasClicked = card(
-  title=st.text_input("Input"),
-  text=st.button("Submit"),
+    st.markdown(
+    """
+    <style>
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      background-color: #fff;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
 )
+
+# Create container element with custom CSS style
+    container = st.container()
+    container.markdown('<div class="card"></div>', unsafe_allow_html=True)
+
+    # Add content to the container
+    container.write("This is a curved card!")
+    container.button("Click me")
+        
 
 # Add elements to the right column
 with right_column:
