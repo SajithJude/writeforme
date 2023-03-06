@@ -11,8 +11,8 @@ with st.sidebar:
                          menu_icon="app-indicator", default_index=0,
                          styles={
         "container": {"padding": "5!important", "background-color": "#fafafa"},
-        "icon": {"color": "white", "font-size": "25px", "background-color":"dark-blue","padding": "5!important"}, 
-        "nav-link": {"font-size": "16px","font-weight":"900", "font-color":"Grey", "text-align": "left", "margin":"0px", "--hover-color": "#FF69B4"},
+        "icon": {"color": "grey", "font-size": "25px", "background-color":"dark-blue","padding": "5!important"}, 
+        "nav-link": {"font-size": "16px","font-weight":"700", "font-color":"Grey", "text-align": "left", "margin":"0px", "--hover-color": "#FF69B4"},
         "nav-link-selected": {"background": " linear-gradient(to right, #9B59B6, #E91E63);"},
     }
     )
