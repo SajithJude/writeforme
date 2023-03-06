@@ -22,7 +22,7 @@ with left_column:
     inpt =  container.text_input("This is a curved card!")
     btn = container.button("Click me")
 # Create container element with custom CSS style
-        st.markdown(
+    st.markdown(
     """
     <style>
     .card {
