@@ -10,84 +10,6 @@ st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
 
 
 
-left_column, right_column = st.columns((2,3))
-
-container = st.container()
-
-# Add elements to the left column
-with left_column:
-    with container:
-        st.write('n')
-
-    # # Define custom CSS style for the card
-    # st.markdown(
-    #     """
-    #     <style>
-    #     .card {
-    #     border-radius: 10px;
-    #     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    #     padding: 20px;
-    #     background-color: #fff;
-    #     }
-    #     </style>
-    #     """,
-    #     unsafe_allow_html=True,
-    # )
-
-    # # Create container element with custom CSS style
-    # container = st.container()
-    # container.markdown('<div class="card"></div>', unsafe_allow_html=True)
-
-    # # Add a text field to the container
-    # text_input = container.text_input("Enter some text:")
-
-    # # Add a dropdown to the container
-    # options = ["Option 1", "Option 2", "Option 3"]
-    # selected_option = container.selectbox("Select an option:", options)
-
-    # # Add a button to the container
-    # if container.button("Click me!"):
-    #     container.write(f"You entered: {text_input}, and selected: {selected_option}")
-
-
-# Add elements to the right column
-with right_column:
-# Define custom CSS style for the card
-    st.markdown(
-        """
-        <style>
-        .card {
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        padding: 20px;
-        background-color: #fff;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    # Create container element with custom CSS style
-    container = st.container()
-    container.markdown('<div class="card"></div>', unsafe_allow_html=True)
-
-    # Add a text field to the container
-    text_input = container.text_input("Enter some text:")
-
-    # Add a dropdown to the container
-    options = ["Option 1", "Option 2", "Option 3"]
-    selected_option = container.selectbox("Select an option:", options)
-
-    # Add a button to the container
-    if container.button("Click me!"):
-        container.write(f"You entered: {text_input}, and selected: {selected_option}")
-
-
-
-
-# Apply the custom theme
-
-
 with st.sidebar:
     choose = option_menu("App Gallery", ["Write For Me", "Idea Generator", "Promotion Ideas", "Account", "Log Out"],
                          icons=['house', 'camera fill', 'kanban', 'book','person lines fill'],
@@ -128,3 +50,16 @@ def add_bg_from_local(image_file):
 add_bg_from_local('image.jpg')    
     
 
+if choose == "Write For Me":
+    col1, col2 = st.columns( [0.8, 0.2])
+    with col1:               # To display the header text using css style
+        st.markdown(""" <style> .font {
+        font-size:35px ; font-family: 'Cooper Black'; color: #FF9633;} 
+        </style> """, unsafe_allow_html=True)
+        st.markdown('<p class="font">About the Creator</p>', unsafe_allow_html=True)    
+    with col2:               # To display brand log
+        st.markdown('<p class="font">About the Creator</p>', unsafe_allow_html=True)    
+
+    
+    st.write("Please visit My Data Talk's Medium blog at: https://medium.com/@insightsbees")    
+    # st.image(profile, width=700 )
