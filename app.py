@@ -87,47 +87,47 @@ border: 1px solid rgba(255, 255, 255, 0.3);
      } 
     </style> """, unsafe_allow_html=True)
 
-col1, col2,= st.columns(2)
+# col1, col2,= st.columns(2)
 
-with col1:
-    if choose == "Write For Me":
-        with st.form(key="form"):
-            st.subheader('Write for me')
-            des=st.text_input(label='Description') 
-            # para=st.text_input(label='Parameter') 
-            submitted = st.form_submit_button('Submit')
-            if submitted:
-                x = openai(des)
+# with col1:
+#     if choose == "Write For Me":
+#         with st.form(key="form"):
+#             st.subheader('Write for me')
+#             des=st.text_input(label='Description') 
+#             # para=st.text_input(label='Parameter') 
+#             submitted = st.form_submit_button('Submit')
+#             if submitted:
+#                 x = openai(des)
                  
     
 
-    elif choose == "Idea Generator":
-        with st.form(key="form2"):
-            st.subheader('Idea Generator')
-            des2=st.text_input(label='Description') 
-            para2=st.text_input(label='Parameter') 
-            submitted = st.form_submit_button('Submit')
-            if submitted:
-                x = openai(des2)
-                # if "x" not in st.session_state:
-                st.session_state['x_result'] = x
+#     elif choose == "Idea Generator":
+#         with st.form(key="form2"):
+#             st.subheader('Idea Generator')
+#             des2=st.text_input(label='Description') 
+#             para2=st.text_input(label='Parameter') 
+#             submitted = st.form_submit_button('Submit')
+#             if submitted:
+#                 x = openai(des2)
+#                 # if "x" not in st.session_state:
+#                 st.session_state['x_result'] = x
 
 
 
-    elif choose == "Promotion Ideas":
-        with st.form(key="form2"):
-            st.subheader('Promotion Ideas')
-            des3=st.text_input(label='Description') 
-            # para2=st.text_input(label='Parameter') 
-            submitted = st.form_submit_button('Submit')
-            if submitted:
-                x = openai(des2)
-                # if "x" not in st.session_state:
-                st.session_state['x_result'] = x
+#     elif choose == "Promotion Ideas":
+#         with st.form(key="form2"):
+#             st.subheader('Promotion Ideas')
+#             des3=st.text_input(label='Description') 
+#             # para2=st.text_input(label='Parameter') 
+#             submitted = st.form_submit_button('Submit')
+#             if submitted:
+#                 x = openai(des2)
+#                 # if "x" not in st.session_state:
+#                 st.session_state['x_result'] = x
 
 
 
-with col2:
-    with st.container():
-        # if x is not None:
-        st.code(st.session_state['x'])
+# with col2:
+#     with st.container():
+#         # if x is not None:
+#         st.code(st.session_state['x'])
