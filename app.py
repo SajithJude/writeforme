@@ -36,7 +36,7 @@ def add_bg_from_local(image_file):
         <p>This is an example of a transparent Glassmorphic Streamlit card.</p>
     </div>
     """, unsafe_allow_html=True)
-add_bg_from_local('images.jpg')    
+add_bg_from_local('image.jpg')    
 
 
     
