@@ -19,6 +19,7 @@ slider_style = """
 <style>
     .css-1tj0q0g-ValueContainer {
         font-size: 24px !important;
+        color: #000000 !important;
     }
 </style>
 """
