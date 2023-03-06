@@ -18,7 +18,7 @@ with st.sidebar:
     )
 
     with st.container():
-        box=option_menu("App Gallery", ["Trial Pack"],
+        box=option_menu("Trial Pack", ["Click to subscribe"],
                          icons=['user'],
                          menu_icon="app-indicator", default_index=0,
                         styles={
