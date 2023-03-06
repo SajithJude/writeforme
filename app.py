@@ -31,11 +31,12 @@ with left_column:
 
 # Create container element with custom CSS style
     container = st.container()
-    container.markdown('<div class="card"></div>', unsafe_allow_html=True)
+    inpt =  container.text_input("This is a curved card!")
+    btn = container.button("Click me")
+    container.markdown(f'<div class="card">{inpt}{btn}</div>', unsafe_allow_html=True)
 
     # Add content to the container
-    container.write("This is a curved card!")
-    container.button("Click me")
+   
         
 
 # Add elements to the right column
