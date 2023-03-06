@@ -21,7 +21,6 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-    # name = 
 
     
     st.markdown("""
@@ -46,11 +45,12 @@ def add_bg_from_local(image_file):
         }
     </style>
     """, unsafe_allow_html=True)
+    name = st.text_input('Enter your name:')
 
     st.markdown(f"""
     <div class="glass-card" style="width:100%">
-       <div class="column">{{st.text_input('Enter your name:')}}</div>
-       <div class="column">{{st.text_input('Enter your name:')}}</div>
+       <div class="column">{name}</div>
+       <div class="column">{name}</div>
     </div>
     """, unsafe_allow_html=True)
 add_bg_from_local('image.jpg')    
