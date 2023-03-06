@@ -60,19 +60,29 @@ st.markdown(""" <style>
 if choose == "Write For Me":
     # st.stop()
     with st.form(key="form"):
-        st.markdown(
-            f"""
-            <div style='
-                height: 100%;
-                background-size: cover;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(1, 1, 1,1);
-            '></div>
-            """,
-            unsafe_allow_html=True
-        )
+        st.subheader('Write for me')
         des=st.text_input(label='Description') 
         para=st.text_input(label='Parameter') 
+        submitted = st.form_submit_button('Submit')
+        if submitted:
+            st.write('Submitted!')
+            st.stop()
+
+elif choose == "Idea Generator":
+    with st.form(key="form2"):
+        st.subheader('Idea Generator')
+        des2=st.text_input(label='Description') 
+        para2=st.text_input(label='Parameter') 
+        submitted = st.form_submit_button('Submit')
+        if submitted:
+            st.write('Submitted!')
+            st.stop()
+
+elif choose == "Promotion Ideas":
+    with st.form(key="form2"):
+        st.subheader('Promotion Ideas')
+        des2=st.text_input(label='Description') 
+        para2=st.text_input(label='Parameter') 
         submitted = st.form_submit_button('Submit')
         if submitted:
             st.write('Submitted!')
