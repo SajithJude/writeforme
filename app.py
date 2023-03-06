@@ -3,7 +3,7 @@ import base64
 
 # Create a text input field and get its value
 name = st.text_input('Enter your name:')
-message = f'Hello, {name}!'
+# message = f'Hello, {name}!'
 
 # Inject the message inside a div tag
 st.markdown(f'<div style="background-color: #f0f0f0; padding: 20px;">{message}</div>', unsafe_allow_html=True)
@@ -48,8 +48,8 @@ def add_bg_from_local(image_file):
 
     st.markdown(f"""
     <div class="glass-card" style="width:100%">
-       <div class="column">{message}</div>
-       <div class="column">{message}</div>
+       <div class="column">{name}</div>
+       <div class="column">{name}</div>
     </div>
     """, unsafe_allow_html=True)
 add_bg_from_local('image.jpg')    
