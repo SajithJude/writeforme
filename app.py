@@ -17,10 +17,43 @@ container = st.container()
 # Add elements to the left column
 with left_column:
     with container:
-        inpt =  container.text_input("This is a curved card!")
-        btn = container.button("Click me")
-    # Create container element with custom CSS style
-        st.markdown(
+        st.write('n')
+
+    # # Define custom CSS style for the card
+    # st.markdown(
+    #     """
+    #     <style>
+    #     .card {
+    #     border-radius: 10px;
+    #     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    #     padding: 20px;
+    #     background-color: #fff;
+    #     }
+    #     </style>
+    #     """,
+    #     unsafe_allow_html=True,
+    # )
+
+    # # Create container element with custom CSS style
+    # container = st.container()
+    # container.markdown('<div class="card"></div>', unsafe_allow_html=True)
+
+    # # Add a text field to the container
+    # text_input = container.text_input("Enter some text:")
+
+    # # Add a dropdown to the container
+    # options = ["Option 1", "Option 2", "Option 3"]
+    # selected_option = container.selectbox("Select an option:", options)
+
+    # # Add a button to the container
+    # if container.button("Click me!"):
+    #     container.write(f"You entered: {text_input}, and selected: {selected_option}")
+
+
+# Add elements to the right column
+with right_column:
+# Define custom CSS style for the card
+    st.markdown(
         """
         <style>
         .card {
@@ -31,23 +64,24 @@ with left_column:
         }
         </style>
         """,
-        unsafe_allow_html=True,)
-        container.markdown(f'{{<div class="card"><div>{inpt}</div><div>{btn}</div></div>}}', unsafe_allow_html=True)
-        
-        # Add content to the container
-    
-        
+        unsafe_allow_html=True,
+    )
 
-# Add elements to the right column
-with right_column:
-    with st.container():
-        rightcard=option_menu("Trial Pack",['h'],
-                            icons=['user'],
-                            menu_icon="app-indicator", default_index=0,
-                            styles={
-            "container": {"padding": "5!important","margin": "1!important" ,"background-color": "#fafafa", "box-shadow": "0px 0px 20px 5px"},
-        }
-        )
+    # Create container element with custom CSS style
+    container = st.container()
+    container.markdown('<div class="card"></div>', unsafe_allow_html=True)
+
+    # Add a text field to the container
+    text_input = container.text_input("Enter some text:")
+
+    # Add a dropdown to the container
+    options = ["Option 1", "Option 2", "Option 3"]
+    selected_option = container.selectbox("Select an option:", options)
+
+    # Add a button to the container
+    if container.button("Click me!"):
+        container.write(f"You entered: {text_input}, and selected: {selected_option}")
+
 
 
 
