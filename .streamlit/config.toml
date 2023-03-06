@@ -1,6 +1,7 @@
 [theme]
 
-secondaryBackgroundColor = "rgba(0, 0, 0, 0.01)"
+secondaryBackgroundColor = "rgba(0, 0, 0, 0.001)"
+backgroundColor="rgba(0, 0, 0, 0)"
 
 
 [ui]
