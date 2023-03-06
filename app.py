@@ -13,6 +13,19 @@ def add_bg_from_local(image_file):
     st.markdown(
     f"""
     <style>
+    .stApp {{
+        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-size: cover
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.1);
+        box-shadow:  0 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 10%;
+    }}
+
     .card  {{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
         display: flex;
@@ -33,9 +46,14 @@ def add_bg_from_local(image_file):
     )
 
     
+    
+    name = st.text_input('')
 
-
+    st.markdown(f"""
+    <div class="card">
+      
+    </div>
+    """, unsafe_allow_html=True)
 add_bg_from_local('image.jpg')    
 
-with st.beta_container():
-    st.markdown('<div class="card">Hello, world!</div>', unsafe_allow_html=True)
+
