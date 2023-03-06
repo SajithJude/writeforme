@@ -31,12 +31,20 @@ def add_bg_from_local(image_file):
             padding: 20px;
           
         }
+
+         .column card {
+            flex-basis: 45%;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            filter: blur(4px);
+        }
     </style>
     """, unsafe_allow_html=True)
 
     st.markdown("""
     <div class="glass-card" style="width:100%">
-        <p>This is an example of a transparent Glassmorphic Streamlit card.</p>
+       <div class="column">Column 1</div>
+       <div class="column">Column 2</div>
     </div>
     """, unsafe_allow_html=True)
 add_bg_from_local('image.jpg')    
