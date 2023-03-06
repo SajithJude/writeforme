@@ -33,7 +33,7 @@ with st.sidebar:
                          icons=['user'],
                          menu_icon="app-indicator", default_index=0,
                         styles={
-        "container":{"background":"linear-gradient(to right, #9B59B6, #E91E63);","font-color":"white"},
+        "container": {"padding": "5!important","background": "rgba(255, 255, 255, 0.2)","border-radius": "16px","box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1)","backdrop-filter": "blur(5px)","-webkit-backdrop-filter": "blur(5px)","border": "1px solid rgba(255, 255, 255, 0.3)"},
     }
     )
 
