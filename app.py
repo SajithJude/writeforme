@@ -13,7 +13,7 @@ with st.container():
                          icons=['user'],
                          menu_icon="app-indicator", default_index=0,
                         styles={
-        "container": {"padding": "5!important","margin": "1!important" ,"background-color": "#fafafa", "border-radius":"25px"},
+        "container": {"padding": "5!important","margin": "1!important" ,"background-color": "#fafafa"},
     }
     )
 
