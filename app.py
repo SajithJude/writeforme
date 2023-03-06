@@ -8,7 +8,7 @@ st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
 
 
 
-left_column, right_column , last_column= st.columns((1,3))
+left_column, right_column = st.columns((1,3))
 
 
 # Add elements to the left column
