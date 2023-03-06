@@ -18,8 +18,6 @@ def add_bg_from_local(image_file):
         display: flex;
             justify-content: center;
             align-items: center;
-            height: 300px;
-            width: 500px;
             background-size: cover;
             background-position: center;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
