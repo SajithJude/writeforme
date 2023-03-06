@@ -15,15 +15,13 @@ def add_bg_from_local(image_file):
     <style>
     .stApp {{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
-        background-size: cover
         background-color: rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.2);
         padding: 20px;
     }}
 
     .card  {{
-        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
-        display: flex;
+            display: flex;
             justify-content: center;
             align-items: center;
             background-size: cover;
