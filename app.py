@@ -25,7 +25,7 @@ def add_bg_from_local(image_file):
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.1);
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.2);
             border-radius: 20px;
             padding: 10%;
@@ -34,7 +34,7 @@ def add_bg_from_local(image_file):
 
          .column card {
             flex-basis: 35%;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.2);
             padding: 5%;
             filter: blur(10px);
         }
