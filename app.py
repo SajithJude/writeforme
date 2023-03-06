@@ -88,11 +88,10 @@ elif choose == "Idea Generator":
             st.stop()
 
 elif choose == "Promotion Ideas":
-    with st.form(key="form2"):
-        st.subheader('Promotion Ideas')
-        des2=st.text_input(label='Description') 
-        para2=st.text_input(label='Parameter') 
-        submitted = st.form_submit_button('Submit')
-        if submitted:
-            st.write('Submitted!')
-            st.stop()
+    prom=option_menu(None, ["Click to subscribe"],
+                         icons=['apple'],
+                         menu_icon="activity", default_index=0,
+                        styles={
+        "container": {"padding": "5!important","background": "rgba(255, 255, 255, 0.2)","border-radius": "16px","box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1)","backdrop-filter": "blur(5px)","-webkit-backdrop-filter": "blur(5px)","border": "1px solid rgba(255, 255, 255, 0.3)"},
+        "icon": {"font-color":"Grey", "font-size": "25px", "border-radius":"50%"}, 
+    )
