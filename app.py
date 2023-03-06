@@ -13,7 +13,7 @@ with st.container():
                          icons=['user'],
                          menu_icon="app-indicator", default_index=0,
                         styles={
-        "container":{"background":"linear-gradient(to right, #9B59B6, #E91E63);","font-color":"white"},
+        "container":{"background":"rgba(0, 0, 0, 0)"}
     }
     )
 
