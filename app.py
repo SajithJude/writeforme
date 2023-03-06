@@ -8,7 +8,8 @@ st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
 
 
 with st.container():
-        card=option_menu("Trial Pack",['hshhss'],
+
+    card=option_menu("Trial Pack",['hshhss'],
                          icons=['user'],
                          menu_icon="app-indicator", default_index=0,
                         styles={
