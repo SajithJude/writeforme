@@ -51,16 +51,12 @@ add_bg_from_local('image.jpg')
     
 
 if choose == "Write For Me":
-    x=st.markdown(""" <style> .columns_in_form2 {
+    st.markdown(""" <style> .form {
     font-size:16px ; color:#E4E4E4; border-radius:10px;} 
     </style> """, unsafe_allow_html=True)
-    with st.form(key="columns_in_form2",x):
-
-    # with st.form(key='columns_in_form2',clear_on_submit=True): #set clear_on_submit=True so that the form will be reset/cleared once it's submitted
-        #st.write('Please help us improve!')
-        des=st.text_input(label='Description') #Collect user feedback
-        para=st.text_input(label='Parameter') #Collect user feedback
-        # Message=st.text_input(label='Please Enter Your Message') #Collect user feedback
+    with st.form(key="form"):
+        des=st.text_input(label='Description') 
+        para=st.text_input(label='Parameter') 
         submitted = st.form_submit_button('Submit')
         if submitted:
             st.write('Submitted!')
