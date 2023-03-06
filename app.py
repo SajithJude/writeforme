@@ -44,6 +44,17 @@ with st.sidebar:
 
     
 def openai(description):
+    reply = openai.Completion.create(
+                                        engine="text-davinci-003",
+                                        prompt=inpt,
+                                        max_tokens=3600,
+                                        n=1,
+                                        stop=None,
+                                        temperature=0.5,
+                                        )
+    explan= reply.choices[0].text.strip()
+    st.stop()
+    return explan
 
 
 def add_bg_from_local(image_file):
@@ -85,10 +96,10 @@ with col1:
         with st.form(key="form"):
             st.subheader('Write for me')
             des=st.text_input(label='Description') 
-            para=st.text_input(label='Parameter') 
+            # para=st.text_input(label='Parameter') 
             submitted = st.form_submit_button('Submit')
             if submitted:
-                st.write('Submitted!')
+                x = openai(des)
                 st.stop()
 
     elif choose == "Idea Generator":
@@ -98,18 +109,20 @@ with col1:
             para2=st.text_input(label='Parameter') 
             submitted = st.form_submit_button('Submit')
             if submitted:
-                st.write('Submitted!')
+                x = openai(des2)
                 st.stop()
 
     elif choose == "Promotion Ideas":
         with st.form(key="form2"):
             st.subheader('Promotion Ideas')
-            des2=st.text_input(label='Description') 
-            para2=st.text_input(label='Parameter') 
+            des3=st.text_input(label='Description') 
+            # para2=st.text_input(label='Parameter') 
             submitted = st.form_submit_button('Submit')
             if submitted:
-                st.write('Submitted!')
+                x = openai(des2)
                 st.stop()
 
 with col2:
-    st.code("Out put")
+    if x is not None:
+
+        st.code(x)
