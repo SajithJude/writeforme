@@ -36,7 +36,7 @@ def add_bg_from_local(image_file):
             flex-basis: 35%;
             background-color: rgba(255, 255, 255, 0.1);
             padding: 5%;
-            filter: blur(4px);
+            filter: blur(10px);
         }
     </style>
     """, unsafe_allow_html=True)
