@@ -4,6 +4,10 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as html
 from streamlit_card import card
+import openai
+import os
+
+openai.api_key =  os.getenv("APIKEY")
 st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide",initial_sidebar_state="expanded"  )
 
 hide_menu_style = """
@@ -39,6 +43,7 @@ with st.sidebar:
     )
 
     
+def openai(description):
 
 
 def add_bg_from_local(image_file):
