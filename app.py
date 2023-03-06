@@ -101,14 +101,14 @@ border: 1px solid rgba(255, 255, 255, 0.3);
                  
     
 
-    elif choose == "Idea Generator":
-        with st.form(key="form2"):
-            st.subheader('Idea Generator')
-            des2=st.text_input(label='Description') 
-            para2=st.text_input(label='Parameter') 
-            submitted = st.form_submit_button('Submit')
-            if submitted:
-                x = openai(des2)
+if choose == "Idea Generator":
+    with st.form(key="form2"):
+        st.subheader('Idea Generator')
+        des2=st.text_input(label='Description') 
+        para2=st.text_input(label='Parameter') 
+        submitted = st.form_submit_button('Submit')
+        if submitted:
+            x = openai(des2)
                 # if "x" not in st.session_state:
                 # st.session_state['x_result'] = x
 
