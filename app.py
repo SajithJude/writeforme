@@ -15,15 +15,17 @@ def add_bg_from_local(image_file):
     <style>
     .stApp {{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
-        background-size: cover
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        color: rgba(255, 255, 255, 0.1);
-        box-shadow:  0 8px 16px rgba(0, 0, 0, 0.3);
-        border-radius: 20px;
-        padding: 10%;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 500px;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 24px;
+            text-align: center;
     }}
     </style>
     """,
