@@ -17,7 +17,7 @@ def add_bg_from_local(image_file):
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
     }}
 
-    .card  {{
+    .card  {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -31,7 +31,7 @@ def add_bg_from_local(image_file):
             
             font-size: 24px;
             text-align: center;
-    }}
+    }
     </style>
     """,
     unsafe_allow_html=True
