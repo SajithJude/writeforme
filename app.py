@@ -51,7 +51,8 @@ add_bg_from_local('image.jpg')
     
 
 if choose == "Write For Me":
-        st.markdown(""" <style> .form {
+
+    st.markdown(""" <style> .form {
     font-size:16px ; color:#E4E4E4; border-radius:10px;} 
     </style> """, unsafe_allow_html=True)
     with st.form(key="form"):
