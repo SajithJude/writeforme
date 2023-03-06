@@ -13,18 +13,18 @@ def add_bg_from_local(image_file):
     st.markdown(
     f"""
     <style>
-    .card  {{
+    .card{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
         display: flex;
-            justify-content: center;
-            align-items: center;
-            background-size: cover;
-            background-position: center;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            color: white;
-            font-size: 24px;
-            text-align: center;
-    }}
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
     </style>
     """,
     unsafe_allow_html=True
