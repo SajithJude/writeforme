@@ -16,10 +16,8 @@ def add_bg_from_local(image_file):
     .stApp {{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
         background-size: cover
-        width: 100%;
         background-color: rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.2);
-        border-radius: 20px;
         padding: 20px;
     }}
 
@@ -31,6 +29,8 @@ def add_bg_from_local(image_file):
             background-size: cover;
             height: 300px;
             width: 500px;
+        border-radius: 20px;
+
             background-position: center;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
             color: white;
