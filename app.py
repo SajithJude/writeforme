@@ -13,11 +13,10 @@ st.set_page_config(page_title="My App", page_icon=":rocket:", layout="centered",
 #         """
 # st.markdown(hide_menu_style, unsafe_allow_html=True)
 with st.container():
-
     navbar = option_menu("Output", [""],
                             menu_icon="menu-button", default_index=0, orientation='horizontal',
                             styles={
-            "container": {"background": "rgba(255, 255, 255, 0.2)","border-radius": "16px","box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1);","backdrop-filter": "blur(5px)","border": "1px solid rgba(255, 255, 255, 0.3);"},
+        "container": {"padding": "5!important","background": "rgba(255, 255, 255, 0.2)","border-radius": "16px","box-shadow": "0 4px 30px rgba(0, 0, 0, 0.1)","backdrop-filter": "blur(5px)","-webkit-backdrop-filter": "blur(5px)","border": "1px solid rgba(255, 255, 255, 0.3)"},
         }
         )
 
