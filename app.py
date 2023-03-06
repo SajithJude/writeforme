@@ -100,8 +100,8 @@ with col1:
             submitted = st.form_submit_button('Submit')
             if submitted:
                 x = openai(des)
-                # if "x" not in st.session_state:
-                st.session_state['x'] = x
+                if "x" not in st.session_state:
+                    st.session_state['x'] = x
     
 
     elif choose == "Idea Generator":
@@ -112,7 +112,8 @@ with col1:
             submitted = st.form_submit_button('Submit')
             if submitted:
                 x = openai(des2)
-                st.session_state['x'] = x
+                if "x" not in st.session_state:
+                    st.session_state['x'] = x
 
 
 
@@ -124,7 +125,8 @@ with col1:
             submitted = st.form_submit_button('Submit')
             if submitted:
                 x = openai(des2)
-                st.session_state['x'] = x
+                if "x" not in st.session_state:
+                    st.session_state['x'] = x
 
 
 
