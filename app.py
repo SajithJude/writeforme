@@ -33,7 +33,9 @@ with left_column:
     container = st.container()
     inpt =  container.text_input("This is a curved card!")
     btn = container.button("Click me")
-    container.markdown(f'<div class="card">{inpt}{btn}</div>', unsafe_allow_html=True)
+    container.markdown(f'<div class="card">
+    <div>{inpt}</div>
+    <div>{btn}</div></div>', unsafe_allow_html=True)
 
     # Add content to the container
    
