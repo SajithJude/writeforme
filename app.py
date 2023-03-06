@@ -64,7 +64,7 @@ st.markdown(""" <style>
      } 
     </style> """, unsafe_allow_html=True)
 
-with st.container:
+with st.container():
 
     if choose == "Write For Me":
     # st.stop()
