@@ -15,12 +15,10 @@ left_column, right_column = st.columns((1,3))
 
 # Add elements to the left column
 with left_column:
-    with st.container():
-        hasClicked = card(
-  title="Hello World!",
-  text="Some description",
-  image="http://placekitten.com/200/300",
-  url="https://github.com/gamcoh/st-card"
+
+    hasClicked = card(
+  title=st.text_input("Input"),
+  text=st.button("Submit"),
 )
 
 # Add elements to the right column
