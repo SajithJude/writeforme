@@ -53,9 +53,10 @@ st.markdown(""" <style>
     .form {
      color:#E4E4E4; 
      border-radius:10px;
+     border-width:2px;
      } 
     </style> """, unsafe_allow_html=True)
-    
+
 if choose == "Write For Me":
     # st.stop()
     with st.form(key="form"):
