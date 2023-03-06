@@ -17,10 +17,6 @@ container = st.container()
 # Add elements to the left column
 with left_column:
     with container:
-
-
-
-        
         inpt =  container.text_input("This is a curved card!")
         btn = container.button("Click me")
     # Create container element with custom CSS style
@@ -36,7 +32,7 @@ with left_column:
         </style>
         """,
         unsafe_allow_html=True,)
-        container.markdown(f'<div class="card"><div>{inpt}</div><div>{btn}</div></div>', unsafe_allow_html=True)
+        container.markdown(f'{{<div class="card"><div>{inpt}</div><div>{btn}</div></div>}}', unsafe_allow_html=True)
         
         # Add content to the container
     
