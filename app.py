@@ -12,32 +12,34 @@ st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
 
 left_column, right_column = st.columns((2,3))
 
+container = st.container()
 
 # Add elements to the left column
 with left_column:
+    with container:
 
-    container = st.container()
 
+
+        
+        inpt =  container.text_input("This is a curved card!")
+        btn = container.button("Click me")
+    # Create container element with custom CSS style
+        st.markdown(
+        """
+        <style>
+        .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        background-color: #fff;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,)
+        container.markdown(f'<div class="card"><div>{inpt}</div><div>{btn}</div></div>', unsafe_allow_html=True)
+        
+        # Add content to the container
     
-    inpt =  container.text_input("This is a curved card!")
-    btn = container.button("Click me")
-# Create container element with custom CSS style
-    st.markdown(
-    """
-    <style>
-    .card {
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      padding: 20px;
-      background-color: #fff;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,)
-    container.markdown(f'<div class="card"><div>{inpt}</div><div>{btn}</div></div>', unsafe_allow_html=True)
-    
-    # Add content to the container
-   
         
 
 # Add elements to the right column
