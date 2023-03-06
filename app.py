@@ -7,15 +7,6 @@ import streamlit.components.v1 as html
 st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
 
 
-import pandas as pd
-import streamlit as st
-import matplotlib.pyplot as plt
-import mpld3
-from mpld3 import plugins
-import streamlit.components.v1 as components
-st.set_page_config(layout="wide")
-
-
 
 left_column, right_column , last_column= st.columns((1,3))
 
