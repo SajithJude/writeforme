@@ -6,7 +6,7 @@ import streamlit.components.v1 as html
 from streamlit_card import card
 
 
-st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide",initial_sidebar_state="expanded",hide_menu=True  )
+st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide",initial_sidebar_state="expanded"  )
 
 
 
