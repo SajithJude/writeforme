@@ -38,37 +38,7 @@ with st.sidebar:
     }
     )
 
-        if choose == "Write For Me":
-        # st.stop()
-            with st.form(key="form"):
-                st.subheader('Write for me')
-                des=st.text_input(label='Description') 
-                para=st.text_input(label='Parameter') 
-                submitted = st.form_submit_button('Submit')
-                if submitted:
-                    st.write('Submitted!')
-                    st.stop()
-
-        elif choose == "Idea Generator":
-            with st.form(key="form2"):
-                st.subheader('Idea Generator')
-                des2=st.text_input(label='Description') 
-                para2=st.text_input(label='Parameter') 
-                submitted = st.form_submit_button('Submit')
-                if submitted:
-                    st.write('Submitted!')
-                    st.stop()
-
-        elif choose == "Promotion Ideas":
-            with st.form(key="form2"):
-                st.subheader('Promotion Ideas')
-                des2=st.text_input(label='Description') 
-                para2=st.text_input(label='Parameter') 
-                submitted = st.form_submit_button('Submit')
-                if submitted:
-                    st.write('Submitted!')
-                    st.stop()
-
+    
 
 
 def add_bg_from_local(image_file):
@@ -93,6 +63,40 @@ st.markdown(""" <style>
      border-width:2px;
      } 
     </style> """, unsafe_allow_html=True)
+
+with st.container:
+
+    if choose == "Write For Me":
+    # st.stop()
+        with st.form(key="form"):
+            st.subheader('Write for me')
+            des=st.text_input(label='Description') 
+            para=st.text_input(label='Parameter') 
+            submitted = st.form_submit_button('Submit')
+            if submitted:
+                st.write('Submitted!')
+                st.stop()
+
+    elif choose == "Idea Generator":
+        with st.form(key="form2"):
+            st.subheader('Idea Generator')
+            des2=st.text_input(label='Description') 
+            para2=st.text_input(label='Parameter') 
+            submitted = st.form_submit_button('Submit')
+            if submitted:
+                st.write('Submitted!')
+                st.stop()
+
+    elif choose == "Promotion Ideas":
+        with st.form(key="form2"):
+            st.subheader('Promotion Ideas')
+            des2=st.text_input(label='Description') 
+            para2=st.text_input(label='Parameter') 
+            submitted = st.form_submit_button('Submit')
+            if submitted:
+                st.write('Submitted!')
+                st.stop()
+
 
 # if choose == "Write For Me":
 #     # st.stop()
