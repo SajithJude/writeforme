@@ -4,6 +4,13 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as html
 
+custom_theme = {
+    "secondaryBackgroundColor": "rgba(0, 0, 0, 0)",
+}
+
+# Apply the custom theme
+st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", theme=custom_theme)
+
 
 with st.sidebar:
     choose = option_menu("App Gallery", ["Write For Me", "Idea Generator", "Promotion Ideas", "Account", "Log Out"],
