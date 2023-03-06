@@ -2,7 +2,6 @@ import streamlit as st
 import base64
 
 # Create a text input field and get its value
-name = st.text_input('Enter your name:')
 # message = f'Hello, {name}!'
 
 # Inject the message inside a div tag
@@ -22,6 +21,8 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
+    name = st.text_input('Enter your name:')
+
     
     st.markdown("""
     <style>
