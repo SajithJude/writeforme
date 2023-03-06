@@ -45,7 +45,7 @@ def add_bg_from_local(image_file):
         }
     </style>
     """, unsafe_allow_html=True)
-    name = st.text_input('Enter your name:')
+    name = st.text_input('')
 
     st.markdown(f"""
     <div class="glass-card" style="width:100%">
