@@ -28,7 +28,7 @@ def add_bg_from_local(image_file):
             background-color: rgba(255, 255, 255, 0.2);
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.5) inset, 0 0 20px rgba(0, 0, 0, 0.2);
             border-radius: 20px;
-            padding: 5%;
+            padding: 10%;
           
         }
 
@@ -43,8 +43,8 @@ def add_bg_from_local(image_file):
 
     st.markdown("""
     <div class="glass-card" style="width:100%">
-       <div class="column">Column 1</div>
-       <div class="column">Column 2</div>
+       <div class="column"></div>
+       <div class="column"></div>
     </div>
     """, unsafe_allow_html=True)
 add_bg_from_local('image.jpg')    
