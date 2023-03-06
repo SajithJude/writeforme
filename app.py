@@ -8,6 +8,15 @@ custom_theme = {
     "secondaryBackgroundColor": "rgba(0, 0, 0, 0)",
 }
 
+with st.container():
+        card=option_menu("Trial Pack",
+                         icons=['user'],
+                         menu_icon="app-indicator", default_index=0,
+                        styles={
+        "container":{"background":"linear-gradient(to right, #9B59B6, #E91E63);","font-color":"white"},
+    }
+    )
+
 # Apply the custom theme
 st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
 
@@ -52,11 +61,3 @@ def add_bg_from_local(image_file):
 add_bg_from_local('image.jpg')    
     
 
-with st.container():
-        card=streamlit_option_menu.option_menu("Trial Pack",
-                         icons=['user'],
-                         menu_icon="app-indicator", default_index=0,
-                        styles={
-        "container":{"background":"linear-gradient(to right, #9B59B6, #E91E63);","font-color":"white"},
-    }
-    )
