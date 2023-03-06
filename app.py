@@ -31,19 +31,10 @@ def add_bg_from_local(image_file):
     )
 
     
-    st.markdown("""
-    <style>
-        .glass-card {
-            
-          
-        }
-    </style>
-    """, unsafe_allow_html=True)
-    name = st.text_input('')
 
     st.markdown(f"""
     <div class="glass-card" style="width:100%">
-      
+      SSS
     </div>
     """, unsafe_allow_html=True)
 add_bg_from_local('image.jpg')    
