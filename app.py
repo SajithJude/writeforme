@@ -51,15 +51,15 @@ add_bg_from_local('image.jpg')
     
 
 if choose == "Write For Me":
-    col1, col2 = st.columns( [0.8, 0.2])
-    with col1:               # To display the header text using css style
-        st.markdown(""" <style> .font {
-        font-size:35px ; font-family: 'Cooper Black'; color: #FF9633;} 
-        </style> """, unsafe_allow_html=True)
-        st.markdown('<p class="font">About the Creator</p>', unsafe_allow_html=True)    
-    with col2:               # To display brand log
-        st.markdown('<p class="font">About the Creator</p>', unsafe_allow_html=True)    
-
-    
-    st.write("Please visit My Data Talk's Medium blog at: https://medium.com/@insightsbees")    
-    # st.image(profile, width=700 )
+    st.markdown(""" <style> .font {
+    font-size:35px ; font-family: 'Cooper Black'; color: #FF9633;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<p class="font">Write For Me</p>', unsafe_allow_html=True)
+    with st.form(key='columns_in_form2',clear_on_submit=True): #set clear_on_submit=True so that the form will be reset/cleared once it's submitted
+        #st.write('Please help us improve!')
+        Name=st.text_input(label='Description') #Collect user feedback
+        Email=st.text_input(label='Parameter') #Collect user feedback
+        Message=st.text_input(label='Please Enter Your Message') #Collect user feedback
+        submitted = st.form_submit_button('Submit')
+        if submitted:
+            st.write('Submitted!')
