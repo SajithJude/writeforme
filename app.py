@@ -9,7 +9,7 @@ custom_theme = {
 }
 
 # Apply the custom theme
-st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", theme=custom_theme)
+st.set_page_config(page_title="My App", page_icon=":rocket:", layout="wide", )
 
 
 with st.sidebar:
