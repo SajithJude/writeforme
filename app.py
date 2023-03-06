@@ -26,7 +26,7 @@ with st.sidebar:
 
 
 
-with st.sidebar:
+
     choose = option_menu("App Gallery", ["Write For Me", "Idea Generator", "Promotion Ideas", "Account", "Log Out"],
                          icons=['cpu', 'lightbulb fill', 'bar-chart fill', 'book','person dash'],
                          menu_icon="app-indicator", default_index=0,
